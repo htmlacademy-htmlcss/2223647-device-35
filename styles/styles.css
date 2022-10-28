@@ -22,8 +22,16 @@
     src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
   }
-  
+ 
+  html {
+    height: 100%;
+  }
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -38,14 +46,96 @@ body {
     background-color: #ffffff;
   }
 
+  /*ставлю хедер по центру*/
+  
+  .page-header-container {
+    margin: 0 auto;
+    width: 1440px;
+}
+  
+.navigation {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .action-list {
+    margin: 0;
+    padding: 0;
+    width: 265px;
+  }
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 731px;
+  }
+
   .action-link {
     text-align: center;
     color:  #000000;
     text-decoration: none;
     text-transform: none;
   }
+
+.page-container {
+    width: 1440px;
+  margin: 0 auto;
+}
+
+.main-container {
+    flex-grow: 1;
+  }
+
+  /*слайдер с квадрокоптером*/
   
-  .navigation-link {
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    }
+    
+    .slider-box {
+        width: 560px;
+    }
+
+    .advantages-box {
+        width: 560px;
+    }
+
+    .characteristics {
+    display: flex;
+    justify-content: space-between;
+    width: 307px;
+    flex-wrap: wrap;
+}
+
+.advert-text {
+    display: flex;
+    width: 560px;
+}
+  
+
+/* расположение иконок */
+
+.products-icons-list {
+    display: flex;
+  justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.products-icons {
+    width: 1160px;
+    margin: 0 auto;
+
+}
+.product-icon {
+    width: 160px;
+}
+
+.navigation-link {
     font-family: "Raleway", sans-serif;
 font-weight: 800;
 font-size: 18px;
@@ -57,6 +147,7 @@ text-decoration: none;
 }
 
 .slogan {
+    display: flex;
     font-family: "Raleway", sans-serif;
 font-weight: 800;
 font-size: 50px;
@@ -65,6 +156,8 @@ color: #000000;
 }
 
 .more-info {
+    display: flex;
+    width: 210px;
     font-family: "Raleway", sans-serif;
 font-weight: 800;
 font-size: 18px;
@@ -77,6 +170,8 @@ background-color: #ffc700;
 }
 
 .meters {
+    display: flex;
+    width: 102px;
     font-size: 36px;
 line-height: 30px;
 color: #000000;
@@ -107,6 +202,21 @@ color: #000000;
 
 /* delivery */
 
+.delivery-box {
+    display: flex;
+    justify-content: space-around;
+   width: 1160px;
+   margin: 0 140px;
+}
+
+.delivery-link-box {
+    width: 280px;
+   }
+.delivery-text {
+    
+    width: 452px;
+    }
+
 .navigation-link-delivery {
     font-family: "Raleway", sans-serif;
 font-weight: 800;
@@ -133,6 +243,8 @@ background-color: #ffc700;
 text-decoration: none;
 }
 
+
+
 .more-info-delivery {
     font-family: "Raleway", sans-serif;
 font-weight: 800;
@@ -146,9 +258,39 @@ background-color: #ebebeb;
 }
 .delivery {
     background-color: #ebebeb;
+   width: 1440px;
 }
 
 /* about us and contacts */
+
+.information-about-firm-box {
+    display: flex;
+    justify-content: space-around;
+    width: 1160px;
+}
+
+.about-us-box {
+    width: 520px;
+}
+
+.contacts-box {
+    width: 532px;
+}
+
+
+.subscribe-box {
+    display: flex;
+    justify-content: space-around;
+    width: 1160px;
+}
+
+.newsletter-box {
+    width: 348px;
+}
+
+.newsletter-text-box {
+    width: 560px;
+}
 
 .button-about-us {
     font-family: "Raleway", sans-serif;
@@ -220,6 +362,32 @@ text-decoration: none;
 
 /* footer index */
 
+.page-footer-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .contacts-footer-box {
+    display: flex;
+    width: 239px;
+   }
+
+   .footer-nav-box {
+    width: 444px;
+    margin: 0;
+    padding: 0;
+
+   }
+
+   .phone-html-box {
+    display: flex;
+    width: 174px;
+    flex-wrap: wrap;
+
+   }
+
 .page-footer {
     background-color: #444444;
     color: #ffffff;
@@ -259,6 +427,22 @@ color: #FFFFFF;
 
 /* catalog */
 
+.catalog-products-box {
+    display: flex;
+    width: 1440px;
+}
+
+.catalog-filter-box {
+    width: 320px;
+}
+
+.catalog-sorting-box{
+    width: 840px;
+}
+
+.product-card {
+    width: 360px;
+}
 .page-title {
     font-family: "Raleway", sans-serif;
 font-weight: 800;
